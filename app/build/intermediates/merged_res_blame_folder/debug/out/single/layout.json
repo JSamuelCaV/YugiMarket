@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "E:\\YugiMarket-app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_fragment.xml",
+        "source": "E:\\YugiMarket-app\\app\\src\\main\\res\\layout\\activity_fragment.xml"
+    },
+    {
+        "merged": "E:\\YugiMarket-app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\header.xml",
+        "source": "E:\\YugiMarket-app\\app\\src\\main\\res\\layout\\header.xml"
+    }
+]
