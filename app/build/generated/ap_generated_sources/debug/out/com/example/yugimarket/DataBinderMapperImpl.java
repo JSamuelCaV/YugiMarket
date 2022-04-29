@@ -6,7 +6,8 @@ import android.view.View;
 import androidx.databinding.DataBinderMapper;
 import androidx.databinding.DataBindingComponent;
 import androidx.databinding.ViewDataBinding;
-import com.example.yugimarket.databinding.ActivityFragmentBindingImpl;
+import com.example.yugimarket.databinding.FragmentFindCardsBindingImpl;
+import com.example.yugimarket.databinding.FragmentUploadCardsBindingImpl;
 import com.example.yugimarket.databinding.HeaderBindingImpl;
 import java.lang.IllegalArgumentException;
 import java.lang.Integer;
@@ -19,14 +20,17 @@ import java.util.HashMap;
 import java.util.List;
 
 public class DataBinderMapperImpl extends DataBinderMapper {
-  private static final int LAYOUT_ACTIVITYFRAGMENT = 1;
+  private static final int LAYOUT_FRAGMENTFINDCARDS = 1;
 
-  private static final int LAYOUT_HEADER = 2;
+  private static final int LAYOUT_FRAGMENTUPLOADCARDS = 2;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(2);
+  private static final int LAYOUT_HEADER = 3;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(3);
 
   static {
-    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.yugimarket.R.layout.activity_fragment, LAYOUT_ACTIVITYFRAGMENT);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.yugimarket.R.layout.fragment_find_cards, LAYOUT_FRAGMENTFINDCARDS);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.yugimarket.R.layout.fragment_upload_cards, LAYOUT_FRAGMENTUPLOADCARDS);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.yugimarket.R.layout.header, LAYOUT_HEADER);
   }
 
@@ -39,11 +43,17 @@ public class DataBinderMapperImpl extends DataBinderMapper {
         throw new RuntimeException("view must have a tag");
       }
       switch(localizedLayoutId) {
-        case  LAYOUT_ACTIVITYFRAGMENT: {
-          if ("layout/activity_fragment_0".equals(tag)) {
-            return new ActivityFragmentBindingImpl(component, view);
+        case  LAYOUT_FRAGMENTFINDCARDS: {
+          if ("layout/fragment_find_cards_0".equals(tag)) {
+            return new FragmentFindCardsBindingImpl(component, view);
           }
-          throw new IllegalArgumentException("The tag for activity_fragment is invalid. Received: " + tag);
+          throw new IllegalArgumentException("The tag for fragment_find_cards is invalid. Received: " + tag);
+        }
+        case  LAYOUT_FRAGMENTUPLOADCARDS: {
+          if ("layout/fragment_upload_cards_0".equals(tag)) {
+            return new FragmentUploadCardsBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for fragment_upload_cards is invalid. Received: " + tag);
         }
         case  LAYOUT_HEADER: {
           if ("layout/header_0".equals(tag)) {
@@ -104,10 +114,11 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(2);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(3);
 
     static {
-      sKeys.put("layout/activity_fragment_0", com.example.yugimarket.R.layout.activity_fragment);
+      sKeys.put("layout/fragment_find_cards_0", com.example.yugimarket.R.layout.fragment_find_cards);
+      sKeys.put("layout/fragment_upload_cards_0", com.example.yugimarket.R.layout.fragment_upload_cards);
       sKeys.put("layout/header_0", com.example.yugimarket.R.layout.header);
     }
   }

@@ -4,6 +4,7 @@ package com.example.yugimarket.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
@@ -13,8 +14,13 @@ import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class HeaderBinding extends ViewDataBinding {
-  protected HeaderBinding(Object _bindingComponent, View _root, int _localFieldCount) {
+  @NonNull
+  public final TextView header;
+
+  protected HeaderBinding(Object _bindingComponent, View _root, int _localFieldCount,
+      TextView header) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.header = header;
   }
 
   @NonNull

@@ -19,9 +19,6 @@
         android:testOnly="true"
         android:theme="@style/Theme.YugiMarket" >
         <activity
-            android:name="com.example.yugimarket.NavigationContentFragment"
-            android:exported="false" />
-        <activity
             android:name="com.example.yugimarket.NavigationDrawerActivity"
             android:exported="false" />
         <activity

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\YugiMarket-app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v26\\values-v26.xml",
+            "outputFile": "E:\\YugiMarket\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v26\\values-v26.xml",
             "map": [
                 {
                     "source": "C:\\Users\\samu\\.gradle\\caches\\transforms-3\\914116008979e77bc79da871871e9f31\\transformed\\appcompat-1.4.1\\res\\values-v26\\values-v26.xml",
