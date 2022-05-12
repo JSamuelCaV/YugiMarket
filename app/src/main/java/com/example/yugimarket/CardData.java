@@ -15,7 +15,13 @@ public CardData(JSONObject json) {
     }
 }
 
+
     public String getName() {
         return name;
     }
+
+
+
+
+
 }

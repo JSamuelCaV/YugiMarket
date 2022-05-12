@@ -10,9 +10,6 @@ color white
 drawable card
 drawable ic_launcher_background
 drawable ic_launcher_foreground
-id TextView
-id background
-id blank_fragment
 id drawer_layout
 id findText
 id find_background
@@ -22,6 +19,7 @@ id layout
 id linear_layout
 id nameCard
 id navigation_view
+id principal
 id recycler_view
 id search
 id toolbar
@@ -31,7 +29,6 @@ id upload_cards
 layout activity_card_view_holder
 layout activity_main
 layout activity_navigation_drawer
-layout fragment_blank
 layout fragment_find_cards
 layout fragment_upload_cards
 layout header
