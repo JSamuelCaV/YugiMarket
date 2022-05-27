@@ -11,9 +11,6 @@
             android:id="@+id/upload_cards"
             android:title="Upload Cards">
         </item>
-        <item
-            android:id="@+id/blank_fragment"
-            android:title="@string/hello_blank_fragment">
-        </item>
+
     </group>
 </menu>

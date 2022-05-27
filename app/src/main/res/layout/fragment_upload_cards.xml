@@ -41,26 +41,29 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
-                    android:id="@+id/search"
+                    android:id="@+id/search_card"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
-                    android:text="Enter the card to search"
+                    android:hint="Enter the card to search"
+                    android:textColorHint="#FFFFFF"
                     android:textColor="#FFFFFF"
                     android:textSize="24dp"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/uploadText" />
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/recycler_view"
-                    android:textColor="#FFFFFF"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
+                    android:id="@+id/recycler_view_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginStart="17dp"
                     android:layout_marginTop="15dp"
+                    android:layout_marginEnd="14dp"
+                    android:background="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/search"  />
+                    app:layout_constraintTop_toBottomOf="@id/search_card" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </RelativeLayout>

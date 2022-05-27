@@ -6,73 +6,95 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="22"
-8-->E:\YugiMarket\app\src\main\AndroidManifest.xml
+8-->F:\YugiMarket\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="31" />
-9-->E:\YugiMarket\app\src\main\AndroidManifest.xml
+9-->F:\YugiMarket\app\src\main\AndroidManifest.xml
 10
-11    <application
-11-->E:\YugiMarket\app\src\main\AndroidManifest.xml:5:5-25:19
-12        android:allowBackup="true"
-12-->E:\YugiMarket\app\src\main\AndroidManifest.xml:6:9-35
-13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.7.0] C:\Users\samu\.gradle\caches\transforms-3\b9e4376e452ce4f1a2bbb1fc4b534124\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
-14        android:debuggable="true"
-15        android:icon="@mipmap/ic_launcher"
-15-->E:\YugiMarket\app\src\main\AndroidManifest.xml:7:9-43
-16        android:label="@string/app_name"
-16-->E:\YugiMarket\app\src\main\AndroidManifest.xml:8:9-41
-17        android:roundIcon="@mipmap/ic_launcher_round"
-17-->E:\YugiMarket\app\src\main\AndroidManifest.xml:9:9-54
-18        android:supportsRtl="true"
-18-->E:\YugiMarket\app\src\main\AndroidManifest.xml:10:9-35
-19        android:testOnly="true"
-20        android:theme="@style/Theme.YugiMarket" >
-20-->E:\YugiMarket\app\src\main\AndroidManifest.xml:11:9-48
-21        <activity
-21-->E:\YugiMarket\app\src\main\AndroidManifest.xml:13:9-15:40
-22            android:name="com.example.yugimarket.NavigationDrawerActivity"
-22-->E:\YugiMarket\app\src\main\AndroidManifest.xml:14:13-53
-23            android:exported="false" />
-23-->E:\YugiMarket\app\src\main\AndroidManifest.xml:15:13-37
-24        <activity
-24-->E:\YugiMarket\app\src\main\AndroidManifest.xml:16:9-24:20
-25            android:name="com.example.yugimarket.MainActivity"
-25-->E:\YugiMarket\app\src\main\AndroidManifest.xml:17:13-41
-26            android:exported="true" >
-26-->E:\YugiMarket\app\src\main\AndroidManifest.xml:18:13-36
-27            <intent-filter>
-27-->E:\YugiMarket\app\src\main\AndroidManifest.xml:19:13-23:29
-28                <action android:name="android.intent.action.MAIN" />
-28-->E:\YugiMarket\app\src\main\AndroidManifest.xml:20:17-69
-28-->E:\YugiMarket\app\src\main\AndroidManifest.xml:20:25-66
-29
-30                <category android:name="android.intent.category.LAUNCHER" />
-30-->E:\YugiMarket\app\src\main\AndroidManifest.xml:22:17-77
-30-->E:\YugiMarket\app\src\main\AndroidManifest.xml:22:27-74
-31            </intent-filter>
-32        </activity>
-33
-34        <provider
-34-->[androidx.emoji2:emoji2:1.0.0] C:\Users\samu\.gradle\caches\transforms-3\2c96a293c0a835e94af1ddc4d74ff22d\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-35            android:name="androidx.startup.InitializationProvider"
-35-->[androidx.emoji2:emoji2:1.0.0] C:\Users\samu\.gradle\caches\transforms-3\2c96a293c0a835e94af1ddc4d74ff22d\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
-36            android:authorities="com.example.yugimarket.androidx-startup"
-36-->[androidx.emoji2:emoji2:1.0.0] C:\Users\samu\.gradle\caches\transforms-3\2c96a293c0a835e94af1ddc4d74ff22d\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
-37            android:exported="false" >
-37-->[androidx.emoji2:emoji2:1.0.0] C:\Users\samu\.gradle\caches\transforms-3\2c96a293c0a835e94af1ddc4d74ff22d\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
-38            <meta-data
-38-->[androidx.emoji2:emoji2:1.0.0] C:\Users\samu\.gradle\caches\transforms-3\2c96a293c0a835e94af1ddc4d74ff22d\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-39                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-39-->[androidx.emoji2:emoji2:1.0.0] C:\Users\samu\.gradle\caches\transforms-3\2c96a293c0a835e94af1ddc4d74ff22d\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
-40                android:value="androidx.startup" />
-40-->[androidx.emoji2:emoji2:1.0.0] C:\Users\samu\.gradle\caches\transforms-3\2c96a293c0a835e94af1ddc4d74ff22d\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
-41            <meta-data
-41-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\samu\.gradle\caches\transforms-3\bdba8a1b7f77d959878d5a52670cf96f\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-42                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-42-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\samu\.gradle\caches\transforms-3\bdba8a1b7f77d959878d5a52670cf96f\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-43                android:value="androidx.startup" />
-43-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\samu\.gradle\caches\transforms-3\bdba8a1b7f77d959878d5a52670cf96f\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-44        </provider>
-45    </application>
-46
-47</manifest>
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->F:\YugiMarket\app\src\main\AndroidManifest.xml:6:5-67
+11-->F:\YugiMarket\app\src\main\AndroidManifest.xml:6:22-64
+12
+13    <application
+13-->F:\YugiMarket\app\src\main\AndroidManifest.xml:8:5-37:19
+14        android:allowBackup="true"
+14-->F:\YugiMarket\app\src\main\AndroidManifest.xml:9:9-35
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.7.0] C:\Users\samu\.gradle\caches\transforms-3\d8338c189490aee58604e111af57865f\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+16        android:debuggable="true"
+17        android:icon="@mipmap/ic_launcher"
+17-->F:\YugiMarket\app\src\main\AndroidManifest.xml:10:9-43
+18        android:label="@string/app_name"
+18-->F:\YugiMarket\app\src\main\AndroidManifest.xml:11:9-41
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->F:\YugiMarket\app\src\main\AndroidManifest.xml:12:9-54
+20        android:supportsRtl="true"
+20-->F:\YugiMarket\app\src\main\AndroidManifest.xml:13:9-35
+21        android:testOnly="true"
+22        android:theme="@style/Theme.YugiMarket" >
+22-->F:\YugiMarket\app\src\main\AndroidManifest.xml:14:9-48
+23        <activity
+23-->F:\YugiMarket\app\src\main\AndroidManifest.xml:15:9-18:16
+24            android:name="com.example.yugimarket.OfferViewHolder"
+24-->F:\YugiMarket\app\src\main\AndroidManifest.xml:16:13-44
+25            android:exported="false" />
+25-->F:\YugiMarket\app\src\main\AndroidManifest.xml:17:13-37
+26        <activity
+26-->F:\YugiMarket\app\src\main\AndroidManifest.xml:19:9-21:40
+27            android:name="com.example.yugimarket.SpecificGetterActivity"
+27-->F:\YugiMarket\app\src\main\AndroidManifest.xml:20:13-51
+28            android:exported="false" />
+28-->F:\YugiMarket\app\src\main\AndroidManifest.xml:21:13-37
+29        <activity
+29-->F:\YugiMarket\app\src\main\AndroidManifest.xml:22:9-24:40
+30            android:name="com.example.yugimarket.SpecificUploadActivity"
+30-->F:\YugiMarket\app\src\main\AndroidManifest.xml:23:13-51
+31            android:exported="false" />
+31-->F:\YugiMarket\app\src\main\AndroidManifest.xml:24:13-37
+32        <activity
+32-->F:\YugiMarket\app\src\main\AndroidManifest.xml:25:9-27:40
+33            android:name="com.example.yugimarket.NavigationDrawerActivity"
+33-->F:\YugiMarket\app\src\main\AndroidManifest.xml:26:13-53
+34            android:exported="false" />
+34-->F:\YugiMarket\app\src\main\AndroidManifest.xml:27:13-37
+35        <activity
+35-->F:\YugiMarket\app\src\main\AndroidManifest.xml:28:9-36:20
+36            android:name="com.example.yugimarket.MainActivity"
+36-->F:\YugiMarket\app\src\main\AndroidManifest.xml:29:13-41
+37            android:exported="true" >
+37-->F:\YugiMarket\app\src\main\AndroidManifest.xml:30:13-36
+38            <intent-filter>
+38-->F:\YugiMarket\app\src\main\AndroidManifest.xml:31:13-35:29
+39                <action android:name="android.intent.action.MAIN" />
+39-->F:\YugiMarket\app\src\main\AndroidManifest.xml:32:17-69
+39-->F:\YugiMarket\app\src\main\AndroidManifest.xml:32:25-66
+40
+41                <category android:name="android.intent.category.LAUNCHER" />
+41-->F:\YugiMarket\app\src\main\AndroidManifest.xml:34:17-77
+41-->F:\YugiMarket\app\src\main\AndroidManifest.xml:34:27-74
+42            </intent-filter>
+43        </activity>
+44
+45        <provider
+45-->[androidx.emoji2:emoji2:1.0.0] C:\Users\samu\.gradle\caches\transforms-3\db233f3ba8947fb0f91cd701b83dfe6a\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+46            android:name="androidx.startup.InitializationProvider"
+46-->[androidx.emoji2:emoji2:1.0.0] C:\Users\samu\.gradle\caches\transforms-3\db233f3ba8947fb0f91cd701b83dfe6a\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+47            android:authorities="com.example.yugimarket.androidx-startup"
+47-->[androidx.emoji2:emoji2:1.0.0] C:\Users\samu\.gradle\caches\transforms-3\db233f3ba8947fb0f91cd701b83dfe6a\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+48            android:exported="false" >
+48-->[androidx.emoji2:emoji2:1.0.0] C:\Users\samu\.gradle\caches\transforms-3\db233f3ba8947fb0f91cd701b83dfe6a\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+49            <meta-data
+49-->[androidx.emoji2:emoji2:1.0.0] C:\Users\samu\.gradle\caches\transforms-3\db233f3ba8947fb0f91cd701b83dfe6a\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+50                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+50-->[androidx.emoji2:emoji2:1.0.0] C:\Users\samu\.gradle\caches\transforms-3\db233f3ba8947fb0f91cd701b83dfe6a\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+51                android:value="androidx.startup" />
+51-->[androidx.emoji2:emoji2:1.0.0] C:\Users\samu\.gradle\caches\transforms-3\db233f3ba8947fb0f91cd701b83dfe6a\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+52            <meta-data
+52-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\samu\.gradle\caches\transforms-3\45759b04922bc547a81513b82a38ba1e\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+53                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+53-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\samu\.gradle\caches\transforms-3\45759b04922bc547a81513b82a38ba1e\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+54                android:value="androidx.startup" />
+54-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\samu\.gradle\caches\transforms-3\45759b04922bc547a81513b82a38ba1e\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+55        </provider>
+56    </application>
+57
+58</manifest>
