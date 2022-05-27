@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class CardData {
     private String name;
     private ArrayList<String> set_code = new ArrayList<>();
-
+    private String image_url_small;
 
     public CardData(JSONObject json) {
         try {
@@ -22,8 +22,9 @@ public class CardData {
                 this.set_code.add(jsonObject.getString("set_code"));
 
             }
-            JSONArray jsonArray1 = json.getJSONArray("card_images");
-            JSONObject jsonObject1 = jsonArray1.getJSONObject(0);
+            JSONArray jsonArray1 =json.getJSONArray("card_images");
+            JSONObject jsonObject1=jsonArray1.getJSONObject(0);
+            this.image_url_small=jsonObject1.getString("image_url_small");
 
 
         } catch (JSONException error) {
@@ -41,4 +42,8 @@ public class CardData {
         return set_code;
 
     }
+    public String getImage_url_small(){
+        return image_url_small;
+    }
+
 }

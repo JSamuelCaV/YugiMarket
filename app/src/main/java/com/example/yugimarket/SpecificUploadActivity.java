@@ -32,7 +32,7 @@ public class SpecificUploadActivity extends AppCompatActivity {
     private EditText editTextName;
     private EditText editTextCode;
     private JsonArrayRequest jsonArrayRequest;
-    String name,set_code;
+    String name,set_code,image_url_small;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +45,7 @@ public class SpecificUploadActivity extends AppCompatActivity {
         if (bundle != null) {
             name = (String) bundle.get("name");
              set_code = (String) bundle.get("set_code");
-
+            image_url_small=(String) bundle.get("image_url_small");
             editTextName.setText(name);
 
             editTextCode.setText(set_code);
@@ -113,6 +113,7 @@ public class SpecificUploadActivity extends AppCompatActivity {
             jsonObject.put("price", fprice);
             jsonObject.put("number_to_sell", inumber_to_sell);
             jsonObject.put("seller", sseller);
+            jsonObject.put("card_image", image_url_small);
 
         } catch (JSONException e) {
             e.printStackTrace();

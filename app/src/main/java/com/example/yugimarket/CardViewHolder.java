@@ -51,7 +51,7 @@ public class CardViewHolder extends RecyclerView.ViewHolder {
                             Intent intent = new Intent(activity, SpecificUploadActivity.class);
                             intent.putExtra("name", String.valueOf(data.getName()));
                             intent.putExtra("set_code", items[which]);
-
+                            intent.putExtra("image_url_small", String.valueOf(data.getImage_url_small()));
                             activity.startActivity(intent);
                         }
 
@@ -63,7 +63,7 @@ public class CardViewHolder extends RecyclerView.ViewHolder {
                     Intent intent = new Intent(activity, SpecificUploadActivity.class);
                     intent.putExtra("name", String.valueOf(data.getName()));
                     intent.putExtra("set_code",String.valueOf(item));
-
+                    intent.putExtra("image_url_small", String.valueOf(data.getImage_url_small()));
                     activity.startActivity(intent);
                 }
 
