@@ -19,7 +19,7 @@ import com.google.android.material.navigation.NavigationView;
 
 public class NavigationDrawerActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, DrawerLayout.DrawerListener {
     private DrawerLayout drawerLayout;
-    private Object Toolbar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,7 @@ public class NavigationDrawerActivity extends AppCompatActivity implements Navig
         setContentView(R.layout.activity_navigation_drawer);
         Toolbar toolbar = findViewById(R.id.toolbar);
 
-      //  setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
+
         drawerLayout = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawerLayout.addDrawerListener(toggle);
@@ -36,23 +36,13 @@ public class NavigationDrawerActivity extends AppCompatActivity implements Navig
         NavigationView navView = findViewById(R.id.navigation_view);
         navView.setNavigationItemSelectedListener(this);
 
-       /*MenuItem menuItem = navView.getMenu().getItem(0);
+       MenuItem menuItem = navView.getMenu().getItem(0);
         onNavigationItemSelected(menuItem);
 
         menuItem.setChecked(true);
-        */
+
         drawerLayout.addDrawerListener(this);
 
-        /*View header=navView.getHeaderView(0);
-        header.findViewById(R.id.header).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(NavigationDrawerActivity.this, getString(R.string.title_click),
-                        Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        */
     }
     @Override
     public void onBackPressed() {
@@ -84,13 +74,7 @@ public class NavigationDrawerActivity extends AppCompatActivity implements Navig
                             getSupportActionBar().setTitle(title);
                             callFragmnent(fragment);
                         break;
-                      case R.id.blank_fragment:
-                        title = R.string.hello_blank_fragment;
-                        fragment=new BlankFragment();
-                        drawerLayout.closeDrawer(GravityCompat.START);
-                        getSupportActionBar().setTitle(title);
-                        callFragmnent(fragment);
-                        break;
+
                         default:
                             throw new IllegalArgumentException("menu option not implement");
                 }

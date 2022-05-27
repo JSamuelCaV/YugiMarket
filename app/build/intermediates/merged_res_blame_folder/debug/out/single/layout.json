@@ -1,14 +1,14 @@
 [
     {
-        "merged": "E:\\YugiMarket\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_find_cards.xml",
-        "source": "E:\\YugiMarket\\app\\src\\main\\res\\layout\\fragment_find_cards.xml"
+        "merged": "com.example.yugimarket.app-mergeDebugResources-28:/layout/header.xml",
+        "source": "com.example.yugimarket.app-main-31:/layout/header.xml"
     },
     {
-        "merged": "E:\\YugiMarket\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_upload_cards.xml",
-        "source": "E:\\YugiMarket\\app\\src\\main\\res\\layout\\fragment_upload_cards.xml"
+        "merged": "com.example.yugimarket.app-mergeDebugResources-28:/layout/fragment_upload_cards.xml",
+        "source": "com.example.yugimarket.app-main-31:/layout/fragment_upload_cards.xml"
     },
     {
-        "merged": "E:\\YugiMarket\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\header.xml",
-        "source": "E:\\YugiMarket\\app\\src\\main\\res\\layout\\header.xml"
+        "merged": "com.example.yugimarket.app-mergeDebugResources-28:/layout/fragment_find_cards.xml",
+        "source": "com.example.yugimarket.app-main-31:/layout/fragment_find_cards.xml"
     }
 ]
